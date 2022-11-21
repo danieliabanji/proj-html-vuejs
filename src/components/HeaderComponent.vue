@@ -14,7 +14,7 @@
 
                     </ul>
                 </nav>
-                <button class="text-bold">Schedule a workout</button>
+                <button>Schedule a workout</button>
 
                 <div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -45,6 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
+@use '../assets/styles/partials/mixins' as *;
 
 header {
     background-color: $codgray;
@@ -99,17 +100,10 @@ a {
 }
 
 button {
+    @include btnblue;
     margin: 0 1.5rem;
-    background-color: $dodgerblue;
-    color: $white;
     font-weight: 600;
-    // padding: .75rem;
     padding: 10px 30px;
-    border-radius: 50px;
 
-}
-
-button:hover {
-    background-color: $burntsienna;
 }
 </style>

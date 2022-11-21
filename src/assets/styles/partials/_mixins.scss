@@ -1,0 +1,12 @@
+@use './variables' as *;
+
+@mixin btnblue {
+    background-color: $dodgerblue;
+    color: $white;
+    border-radius: 50px;
+
+    &:hover{
+
+        background-color: $burntsienna;
+    }
+}

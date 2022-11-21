@@ -1,12 +1,21 @@
 <template>
     <div>
-        main
+        <JumboApp />
     </div>
 </template>
 
 <script>
+import { store } from '../store'
+import JumboApp from './JumboApp.vue';
+
 export default {
-    name: 'MainComponent'
+    name: "MainComponent",
+    components: { JumboApp },
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
