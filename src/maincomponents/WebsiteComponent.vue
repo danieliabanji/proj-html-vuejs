@@ -11,7 +11,7 @@
 
 <script>
 import { store } from '../store.js';
-import CardWeb from './CardWeb.vue';
+import CardWeb from '../cardcomponents/CardWeb.vue';
 
 export default {
     name: "WebsiteComponent",

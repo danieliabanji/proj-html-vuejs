@@ -1,6 +1,8 @@
 <template>
     <div class="card my-card border-card ">
-        <img :src="articles.img" class=" border-card card-img " alt="">
+        <a href="#"><img :src="articles.img" class=" border-card card-img " alt=""></a>
+        <div class="overlay">
+        </div>
         <div class=" overlay-card ">
             <h3 class="card-title"><a href="#">{{ articles.title }}</a></h3>
             <p class="card-text">By <a href="#">admin</a> | November 26th, 2019 |<a href="#"> Gym</a></p>
@@ -28,6 +30,7 @@ export default {
     // background-size: cover;
     margin: 0 20px;
     // border: none;
+    position: relative;
 
     .overlay-card {
         display: flex;
@@ -67,6 +70,24 @@ export default {
             }
         }
     }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 65%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: linear-gradient(0deg, rgba(0, 22, 218, 0.3) 20%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &:hover .overlay {
+        opacity: 1;
+    }
+
 }
 
 .border-card {

@@ -35,7 +35,7 @@
 
 <script>
 import { store } from '../store.js';
-import CardTeam from './CardTeam.vue';
+import CardTeam from '../cardcomponents/CardTeam.vue';
 
 export default {
     name: "TeamComponent",

@@ -94,9 +94,9 @@ a {
     background-color: #fff941;
     color: black;
     margin-left: -0.5rem;
-    padding: 0px 4px 6px 4px;
+    padding: 0 8px 4px 8px;
     border-radius: 5px;
-
+    font-size: 1.2rem
 }
 
 button {

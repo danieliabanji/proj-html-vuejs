@@ -150,6 +150,67 @@ export const store = reactive({
             wave: '/img/zigzag-blue.png'
 
         },
+    ],
+
+    socials: [
+        {
+
+            social: 'fa-brands fa-facebook-f',
+            url: '#'
+        },
+        {
+            social: 'fa-brands fa-twitter',
+            url: '#'
+        },
+        {
+            social: 'fa-brands fa-instagram',
+            url: '#'
+        },
+        {
+            social: 'fa-brands fa-youtube',
+            url: '#'
+        },
+        {
+            social: 'fa-brands fa-linkedin-in',
+            url: '#'
+        },
+    ],
+
+    posts: [
+        {
+            icon: 'fa-solid fa-angle-right',
+            link: 'The best protein shake',
+            url: '#'
+        },
+        {
+            icon: 'fa-solid fa-angle-right',
+            link: 'Ultimate cardio workout',
+            url: '#'
+        },
+        {
+            icon: 'fa-solid fa-angle-right',
+            link: 'New juices available now',
+            url: '#'
+        },
+        {
+            icon: 'fa-solid fa-angle-right',
+            link: 'Tips to find training partners',
+            url: '#'
+        },
+        {
+            icon: 'fa-solid fa-angle-right',
+            link: '20 best healthy recipes',
+            url: '#'
+        },
+    ],
+
+    contact: [
+        {
+            title: 'CONTACT INFORMATIONS',
+            address: '4746 Tipple Road Michigan 48449',
+            phone: 'Mobile : 1.800.000.0000',
+            mail: 'Email : info@your-company.com'
+        }
     ]
 
 });

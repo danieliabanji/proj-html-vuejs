@@ -25,7 +25,7 @@
 
 <script>
 import { store } from '../store'
-import CardType from './CardType.vue';
+import CardType from '../cardcomponents/CardType.vue';
 
 export default {
     name: "TypeWorkout",

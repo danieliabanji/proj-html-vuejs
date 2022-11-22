@@ -29,7 +29,7 @@ export default {
 
 
 section {
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0) 70%, ), url('/img/banner2-2x.jpg');
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0) 85%, ), url('/img/banner2-2x.jpg');
     background-position: center;
     background-size: cover;
     font-weight: 500;

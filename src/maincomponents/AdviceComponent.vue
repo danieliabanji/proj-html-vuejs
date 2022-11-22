@@ -50,7 +50,7 @@
 
 <script>
 import { store } from '../store'
-import CardAdvice from './CardAdvice.vue';
+import CardAdvice from '../cardcomponents/CardAdvice.vue';
 
 export default {
     name: "AdviceComponent",
@@ -85,6 +85,7 @@ section {
 
             &:hover {
                 color: $burntsienna;
+                transition: 0.3s;
             }
 
         }

@@ -1,6 +1,7 @@
 <template>
     <div class="card my-card border-card ">
         <img :src="advice.img" class=" border-card card-img " alt="">
+        <a href="#"><i class="fa-solid fa-play play"></i></a>
         <div class=" overlay-card ">
             <h3 class="card-title">{{ advice.title }}</h3>
             <p class="card-text">{{ advice.text }}</p>
@@ -42,9 +43,7 @@ export default {
         margin-right: 90px;
         margin-bottom: 90px;
 
-        &:hover {
-            color: $burntsienna;
-        }
+
 
     }
 

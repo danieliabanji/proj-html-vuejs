@@ -27,20 +27,26 @@ export default {
     // background-image: url('/public/img/service6-2x.jpg');
     // background-size: cover;
     margin: -50px 20px;
-    border: none;
+    // border: none;
 
     .card-img {
         filter: brightness(70%) !important;
-        filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.623));
         height: 450px;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+        transition: transform ease 0.5s, box-shadow ease 0.5s;
+
 
 
     }
 
-    &:hover {
+    &:hover .card-img {
         transform: scale(1.05);
-        transition: 0.5s;
+        // transition: 0.5s;
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+
+
     }
+
 
     .wave {
         width: 15%;

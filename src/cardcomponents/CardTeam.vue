@@ -28,16 +28,19 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 @use '../assets/styles/partials/mixins' as *;
 
+
+
+
 .my-card {
     text-align: center;
     background-color: $codgray;
     border: 5px solid $royalblue;
     padding: 50px;
     margin: 50px 20px;
+    transition: transform ease 0.5s;
 
     &:hover {
         transform: scale(1.05);
-        transition: 0.5s;
     }
 
     img {

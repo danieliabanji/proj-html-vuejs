@@ -21,7 +21,7 @@
 <script>
 import { store } from '../store.js';
 
-import CardArticles from './CardArticles.vue';
+import CardArticles from '../cardcomponents/CardArticles.vue';
 
 export default {
     name: 'ArticleComponent',

@@ -103,6 +103,7 @@ section {
 
     &:hover {
         color: $burntsienna;
+        transition: 0.3s;
     }
 
 }
