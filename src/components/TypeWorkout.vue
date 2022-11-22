@@ -3,7 +3,7 @@
         <div class="container ">
             <div class="d-flex">
                 <div v-for="(item, index) in store.cardWorkout" :key="index">
-                    <CardComponent :type="item" />
+                    <CardType :type="item" />
                 </div>
             </div>
             <div class="text-center py-5">
@@ -25,11 +25,11 @@
 
 <script>
 import { store } from '../store'
-import CardComponent from './CardComponent.vue';
+import CardType from './CardType.vue';
 
 export default {
     name: "TypeWorkout",
-    components: { CardComponent },
+    components: { CardType },
     data() {
         return {
             store

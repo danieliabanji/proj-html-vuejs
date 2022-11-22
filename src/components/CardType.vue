@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: 'CardComponent',
+    name: 'CardType',
     props: {
         type: Object
     }

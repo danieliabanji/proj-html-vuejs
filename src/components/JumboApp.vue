@@ -17,7 +17,6 @@
             <div class="">
                 <a href="#"><i class="fa-solid fa-play play"></i></a>
             </div>
-
         </div>
     </section>
 </template>
@@ -47,7 +46,7 @@ section {
     align-items: center;
 
     h3 {
-        color: $monza;
+        color: $burntsienna;
     }
 
     h1 {
