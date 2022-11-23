@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container py-5 ">
+        <div class="container py-5" data-aos="fade-up">
             <div class="text-center py-5 ">
                 <div class="">
                     <a href="#"><i class="fa-solid fa-play play"></i></a>

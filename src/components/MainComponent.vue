@@ -36,8 +36,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .position {
-//     // position: fixed;
-//     // float: right;
-// }
+div {
+    overflow: hidden;
+}
+
+.position {
+    overflow: unset;
+}
 </style>

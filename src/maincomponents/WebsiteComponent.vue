@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="d-flex container">
+        <div class="d-flex container" data-aos="fade-up">
             <div v-for="(item, index) in store.webCard" :key="index">
                 <CardWeb :web="item" />
             </div>

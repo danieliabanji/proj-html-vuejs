@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container py-5">
+        <div class="container py-5" data-aos="fade-up">
             <div class="text-center py-5 ">
                 <p class="midle-title">
                     "I’ve failed over and over again in my life. And that is why I succeed."

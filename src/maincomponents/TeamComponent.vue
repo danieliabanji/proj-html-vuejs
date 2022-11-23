@@ -1,6 +1,6 @@
 <template>
     <section class="bg-img">
-        <div class="container wrapper ">
+        <div class="container wrapper" data-aos="fade-right">
             <div>
                 <h3>
                     Join our mailing list today
@@ -21,7 +21,7 @@
         </div>
     </section>
     <section class="bg-black ">
-        <div class="d-flex container">
+        <div class="d-flex container" data-aos="fade-up">
             <div v-for="(item, index) in store.cardTeam" :key="index">
                 <CardTeam :team="item" />
             </div>

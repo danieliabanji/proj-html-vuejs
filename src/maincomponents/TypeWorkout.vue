@@ -1,12 +1,12 @@
 <template>
     <section>
         <div class="container ">
-            <div class="d-flex">
+            <div class="d-flex" data-aos="fade-up">
                 <div v-for="(item, index) in store.cardWorkout" :key="index">
                     <CardType :type="item" />
                 </div>
             </div>
-            <div class="text-center py-5">
+            <div class="text-center py-5" data-aos="fade-down">
                 <p class="midle-title">
                     "How you respond to the challenge in the second half will determine what you become after the game,
                     whether you are a winner or a loser."

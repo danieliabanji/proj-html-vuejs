@@ -1,5 +1,5 @@
 <template>
-    <div class="card my-card border-card ">
+    <div class="card my-card border-card">
         <img :src="advice.img" class=" border-card card-img " alt="">
         <a href="#"><i class="fa-solid fa-play play"></i></a>
         <div class=" overlay-card ">

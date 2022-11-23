@@ -1,6 +1,6 @@
 <template>
     <section class="py-5">
-        <div class="container my-5">
+        <div class="container my-5" data-aos="fade-right">
             <div class="d-flex justify-content-between align-items-center my-4">
                 <h2>
                     Latest articles

@@ -11,6 +11,10 @@ import { store } from './store'
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import AOS from 'aos';
+AOS.init({
+  duration: 1000,
+});
 
 export default {
   components: {
@@ -25,6 +29,7 @@ export default {
   }
 }
 </script>
+
 
 <style lang="scss" scoped>
 

@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="text-center info social col">
-                        <img src="/public/img/logo.png" alt="">
+                        <img src="/img/logo.png" alt="">
                         <p class="my-4">
                             Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque
                             consectetur

@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container wrapper ">
+        <div class="container wrapper" data-aos="fade-down">
             <div>
                 <h3>
                     Certified fitness professional
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'JumboApp'
 }

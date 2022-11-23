@@ -2,9 +2,9 @@
     <section>
         <div class="d-flex justify-content-around">
             <div class="position d-flex">
-                <img src="/img/service15-2x.jpg" class="img-advice" alt="">
+                <img src="/img/service15-2x.jpg" class="img-advice" data-aos="fade-right" alt="">
                 <a href="#"><i class="fa-solid fa-play play"></i></a>
-                <div class="text ">
+                <div class="text " data-aos="fade-left">
                     <h3>
                         Tune up your workouts
                     </h3>
@@ -37,7 +37,7 @@
                     View all videos <i class="fa-solid fa-chevron-right"></i>
                 </p>
             </div>
-            <div class="d-flex">
+            <div class="d-flex" data-aos="fade-up">
                 <div v-for="(item, index) in store.cardAdvice" :key="index">
                     <CardAdvice :advice=item />
                 </div>
@@ -50,6 +50,7 @@
 
 <script>
 import { store } from '../store'
+
 import CardAdvice from '../cardcomponents/CardAdvice.vue';
 
 export default {
@@ -57,9 +58,11 @@ export default {
     components: { CardAdvice },
     data() {
         return {
-            store
+            store,
+
         }
-    }
+    },
+
 }
 </script>
 
@@ -68,6 +71,7 @@ export default {
 @use '../assets/styles/partials/mixins' as *;
 
 section {
+
     .position {
         position: relative;
 
