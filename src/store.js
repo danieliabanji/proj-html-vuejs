@@ -12,17 +12,55 @@ export const store = reactive({
         {
             text: 'Services',
             url: '#',
-            current: false
+            current: false,
+            dropMenu: [
+                {
+                    text: 'All Services',
+                    url: '#',
+                },
+                {
+                    text: 'Service Single Page',
+                    url: '#',
+                },
+            ]
         },
         {
             text: 'About',
             url: '#',
-            current: false
+            current: false,
+            dropMenu: [
+                {
+                    text: 'About me',
+                    url: '#',
+                },
+                {
+                    text: 'Our Sponsors',
+                    url: '#',
+                },
+                {
+                    text: 'Contact',
+                    url: '#',
+                },
+            ]
         },
         {
             text: 'Videos',
             url: '#',
-            current: false
+            current: false,
+            dropMenu: [
+                {
+                    text: 'All Playlist',
+                    url: '#',
+                },
+                {
+                    text: 'Playlist Page',
+                    url: '#',
+                },
+                {
+                    text: 'Video Single Page',
+                    url: '#',
+                },
+            ]
         },
         {
             text: 'Blog',
@@ -33,6 +71,16 @@ export const store = reactive({
             text: 'Store',
             url: '#',
             current: false,
+            dropMenu: [
+                {
+                    text: 'Simple Product',
+                    url: '#',
+                },
+                {
+                    text: 'Variable Product',
+                    url: '#',
+                },
+            ]
         },
         {
             text: 'new',
@@ -41,6 +89,8 @@ export const store = reactive({
         }
 
     ],
+
+
 
     cardWorkout: [
         {

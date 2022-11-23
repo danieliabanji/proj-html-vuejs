@@ -162,8 +162,8 @@ section {
         }
 
         .btn-youtube {
-            background-color: #e62117;
-            border: 1px solid #e62117;
+            background-color: $red;
+            border: 1px solid $red;
             // border: none;
             color: $white;
             font-size: 20px;

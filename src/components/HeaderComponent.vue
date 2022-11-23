@@ -5,11 +5,25 @@
                 <img src="/img/logo.png" alt="">
             </div>
             <div class="d-flex align-items-center">
-                <nav class="">
+                <nav id="nav">
                     <ul>
                         <li v-for="(item, index) in store.linkHeader" :key="index">
-                            <a :href="item.url" :class="{ 'active': item.current, 'new': item.new }">{{ item.text
-                            }}</a>
+                            <a :href="item.url" :class="{ 'active': item.current, 'new': item.new }"
+                                v-if="!item.dropMenu">
+                                {{ item.text }}
+                            </a>
+                            <span v-else>
+                                {{ item.text }}
+
+                                <ul class="dropdown">
+                                    <li v-for="menu in item.dropMenu">
+                                        <a :href="menu.url">
+                                            {{ menu.text }}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </span>
+
                         </li>
 
                     </ul>
@@ -37,9 +51,11 @@ export default {
     name: 'HeaderComponent',
     data() {
         return {
-            store
+            store,
+
         }
-    }
+    },
+
 }
 </script>
 
@@ -49,8 +65,7 @@ export default {
 
 header {
     background-color: $codgray;
-    // height: 100px;
-    // justify-content: space-between;
+
 }
 
 .wrapper {
@@ -59,28 +74,9 @@ header {
     align-items: center;
 }
 
-nav {
-    font-size: 1.25rem;
-
-    ul {
-        display: flex;
-        align-items: center;
-        margin-bottom: unset;
-
-
-        li {
-            list-style: none;
-
-        }
-
-
-    }
-
-}
-
 a {
     text-decoration: none;
-    color: $silver;
+    color: $jumbo;
     margin: 0 0.75rem;
 
     &.active,
@@ -89,6 +85,79 @@ a {
     }
 
 }
+
+#nav {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+span {
+    position: relative;
+    padding: 20px;
+    color: $jumbo;
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+        color: $white;
+    }
+
+    &:hover .dropdown {
+        display: block;
+        transition: 2s;
+    }
+
+    &:after {
+        content: '▼';
+        font-size: 0.75rem;
+        margin-left: 5px;
+        display: inline-block;
+
+    }
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    display: none;
+    padding: 0;
+    list-style-type: none;
+    background-color: $codgray;
+    border-radius: 8px;
+
+    li a {
+        font-size: 1rem;
+        display: block;
+        padding: 15px;
+        margin: unset;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $dodgerblue;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            transition: 1s;
+        }
+    }
+}
+
+
+
+
 
 .new {
     background-color: #fff941;
@@ -104,6 +173,5 @@ button {
     margin: 0 1.5rem;
     font-weight: 600;
     padding: 10px 30px;
-
 }
 </style>
